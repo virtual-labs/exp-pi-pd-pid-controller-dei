@@ -43,7 +43,7 @@ var kpi,essi,esss,kp;
          di = 0;
 
      b1 = parseInt(b);
-    //  a2 = parseInt(p);
+    
      b2 = parseInt(q);
      c2 = parseInt(r);
      k = parseInt(k);
@@ -57,7 +57,7 @@ var kpi,essi,esss,kp;
      stepresponse(b1, b2, c2);
      stepresponsec(A,B,C,k,kd,ki);
      
-     //impulseresponse(b1, a2, b2, c2);
+     
 
      
      lc = 1;
@@ -174,36 +174,7 @@ denominator=denominator+ d0;
 
 denominator = denominator + " }}$$";
 
-//         if (ki!=0)
-//         {if(n2!=0)
-// numerator=numerator+n2+"s^2";
-// if(n1!=0)
-//   if(n2!=0)
-//     if(n1>0)
-//       numerator=numerator+ " + " + n1+"s";
-//     else
-//     numerator=numerator + n1+"s";
-//   else
-//   numerator=numerator+ n1+"s";
-// if(n0!=0)
-//   if(n2!=0||n1!=0)
-//   if(n0>0)
-//   numerator=numerator+ " + " + n0;
-//     else
-//     numerator=numerator + n0;
-// else
-// numerator=numerator+ n0;
-// eqn = numerator+"}"+denominator;}
-// else
-// {
-//     if (kd!=0&&k!=0)
-//     numerator = numerator + n2 +"s + "+n1+"";
-//     else if (kd==0)
-//     numerator = numerator + n1;
-//     else
-//     numerator = numerator + n2+"s";
-//     eqn = numerator+"}"+den2;
-// }
+
   
         eqn = numerator+"}"+denominator;
         
@@ -212,6 +183,26 @@ denominator = denominator + " }}$$";
         
          document.getElementById("tanswer").innerHTML ="<br> Step Response in time domain:"+ stepeqn +"<br>Kp:"+kp.toFixed(2)+"<br>ess:"+esss.toFixed(2)+"<br><br>"+ "Response after adding the controller to the system : <br><br>"+coneqn;
          var j, k;
+
+         if (kd==0&&ki==0)
+         conclusion = "The controller is a P controller.";
+         else if (kd!=0&&ki==0)
+         conclusion = "The controller is a PD controller.";
+         else if (kd==0&&ki!=0)
+         conclusion = "The controller is a PI controller.";
+         else
+         conclusion = "The controller is a PID controller.";
+
+         if (k!=0)
+         conclusion = conclusion+"<br> The proportional controller tends to amplify the amplitude and thus, shifts the response upwards.";
+         if (kd!=0)
+         conclusion = conclusion+"<br> The differential controller reduces the overshoot of the response."
+         if (ki!=0)
+         conclusion= conclusion+"<br> The integral controller increses the settling time of the response.";
+
+
+
+
 
          var ms = window.matchMedia("(max-width:950px)");
          cwidth(ms);
@@ -338,49 +329,7 @@ denominator = denominator + " }}$$";
          }
      });
      const labelimp = lab_imp;
-    //  const dataimp = {
-    //      labels: labelimp,
-
-    //      datasets: [{
-    //          label: "Impulse Response",
-    //          data: dat_imp,
-    //          fill: false,
-    //          pointRadius: 1,
-    //          borderColor: 'rgb(75, 192, 192)',
-    //          tension: 0.1
-    //      }]
-    //  };
-    //  window.ch2 = new Chart(chartplot2, {
-    //      type: "line",
-    //      data: dataimp,
-    //      options: {
-    //          title: {
-    //              display: true,
-    //              text: "Impulse Response",
-    //              fontSize: 14,
-    //          },
-    //          maintainAspectRatio: false,
-    //          scales: {
-    //              xAxes: [{
-    //                  scaleLabel: {
-    //                      display: "Time" !== ' ',
-    //                      labelString: "Time"
-    //                  },
-
-    //              }],
-    //              yAxes: [{
-    //                  stacked: false, // `true` for stacked area chart, `false` otherwise
-    //                  beginAtZero: false,
-    //                  scaleLabel: {
-    //                      display: "Amplitude" !== '',
-    //                      labelString: "Amplitude"
-    //                  },
-
-
-    //              }]
-    //          },
-    //      }
-    //  });
+    
      
      
  }
@@ -472,36 +421,7 @@ denominator = denominator + " }}$$";
              dat_step.push(amplitudes1(co1, co2, 0, i));
              lab_step.push(i.toFixed(1));
          }
-    //  } else {
-    //      co1 = b1;
-    //      co2 = 2 * b1 / b2;
-    //      stepeqn = "$${ "+ co1.toFixed(2) +" - "+co1.toFixed(2)+"* e^{-1*t} + " + co2.toFixed(2)+"* t * e^{-1*t}}$$";
-    //      if (amplitudes2(co1, co2, 1, 10) == amplitudes2(co1, co2, 1, 9.8)) {
-    //          maxl = 10;
-    //          stepl = 0.05;
-    //      } else if (amplitudes2(co1, co2, 1, 25) == amplitudes2(co1, co2, 1, 24.5)) {
-    //          maxl = 25;
-    //          stepl = 0.125;
-    //      } else if (amplitudes2(co1, co2, 1, 50) == amplitudes2(co1, co2, 1, 49)) {
-    //          maxl = 50;
-    //          stepl = 0.25;
-    //      } else if (amplitudes2(co1, co2, 1, 100) == amplitudes2(co1, co2, 1, 98)) {
-    //          maxl = 100;
-    //          stepl = 0.5;
-    //      } else if (amplitudes2(co1, co2, 1, 200) == amplitudes2(co1, co2, 1, 196)) {
-    //          maxl = 200;
-    //          stepl = 1;
-    //      } else {
-    //          maxl = 1;
-    //          stepl = 0.005;
-    //      }
-
-    //      for (let i = 0; i <= maxl; i = i + stepl) {
-
-    //          dat_step.push(amplitudes2(co1, co2, 0, i));
-    //          lab_step.push(i.toFixed(1));
-    //      }
-    //  }
+    
  }
 
  function stepresponsec(A,B,C,k,kd,ki) {
@@ -600,115 +520,12 @@ denominator = denominator + " }}$$";
 
         
 
-        // for (let i = 0; i <= maxl; i = i + stepl) {
-
-        //     dat_stepc.push(amplitudesc2(co1, co2, 0, i));
-        //     lab_stepc.push(i.toFixed(1));
-        // }
+        
     }
 }
 
 
-//  function impulseresponse(b1, a2, b2, c2) {
-//      lab_imp = [];
-//      dat_imp = [];
-//      var co1, co2, co3;
-//      var stepl, maxl;
-//      kpi = c2;
-//      console.log(2);
-//      essi = 0;
-//      var det = 4 * a2 * c2 - Math.pow(b2, 2);
-//      if (det < 0)
-//          det = -1 * det;
 
-//      var sqd = Math.sqrt(det)
-//      if (det != 0) {
-//          co1 = 2 * b1 / sqd;
-//          co2 = -1 * b2 / 2 / a2;
-//          co3 = sqd / 2 / a2;
-//          impulseresponse = "$${" +co1.toFixed(2)+"*e^{"+co2.toFixed(2)+"*t}*sin({"+ co3.toFixed(2)+"*t})}$$"
-//          if (amplitudei1(co1, co2, co3, 1, 10) == amplitudei1(co1, co2, co3, 1, 9.8)) {
-//              maxl = 10;
-//              stepl = 0.05;
-//          } else if (amplitudei1(co1, co2, co3, 1, 25) == amplitudei1(co1, co2, co3, 1, 24.5)) {
-//              maxl = 25;
-//              stepl = 0.125;
-//          } else if (amplitudei1(co1, co2, co3, 1, 50) == amplitudei1(co1, co2, co3, 1, 49)) {
-//              maxl = 50;
-//              stepl = 0.25;
-//          } else if (amplitudei1(co1, co2, co3, 1, 100) == amplitudei1(co1, co2, co3, 1, 98)) {
-//              maxl = 100;
-//              stepl = 0.5;
-//          } else if (amplitudei1(co1, co2, co3, 1, 200) == amplitudei1(co1, co2, co3, 1, 196)) {
-//              maxl = 200;
-//              stepl = 1;
-//          } else {
-//              maxl = 1;
-//              stepl = 0.005;
-//          }
-//          if (lab_step[lab_step.length - 1] > maxl) {
-//              maxl = lab_step[lab_step.length - 1];
-//              stepl = maxl / 200;
-//          }
-//          for (let i = 0; i <= maxl; i = i + stepl) {
-
-//              dat_imp.push(amplitudei1(co1, co2, co3, 0, i));
-//              lab_imp.push(i.toFixed(1));
-//              lab_final.push(i.toFixed(1));
-//          }
-//      } else {
-//         impulseresponse = "$${" + co1.toFixed(2) +"*e^{-1*t}*t}$$";
-//          co1 = 2 * b2 / b1;
-//          if (amplitudei2(co1, 1, 10) == amplitudei2(co1, 1, 9.8)) {
-//              maxl = 10;
-//              stepl = 0.05;
-//          } else if (amplitudei2(co1, 1, 25) == amplitudei2(co1, 1, 24.5)) {
-//              maxl = 25;
-//              stepl = 0.125;
-//          } else if (amplitudei2(co1, 1, 50) == amplitudei2(co1, 1, 49)) {
-//              maxl = 50;
-//              stepl = 0.25;
-//          } else if (amplitudei2(co1, 1, 100) == amplitudei2(co1, 1, 98)) {
-//              maxl = 100;
-//              stepl = 0.5;
-//          } else if (amplitudei2(co1, 1, 200) == amplitudei2(co1, 1, 196)) {
-//              maxl = 200;
-//              stepl = 1;
-//          } else {
-//              maxl = 1;
-//              stepl = 0.005;
-//          }
-//          if (lab_step[lab_step.length - 1] > maxl) {
-//              maxl = lab_step[lab_step.length - 1];
-//              stepl = maxl / 200;
-//          }
-//          for (let i = 0; i <= maxl; i = i + stepl) {
-
-//              dat_imp.push(amplitudei2(co1, 0, i));
-//              lab_imp.push(i.toFixed(1));
-//              lab_final.push(i.toFixed(1));
-//          }
-//      }
-//  }
-
- 
-
-//  function amplitudei2(v1, str, t) {
-//      var cal = v1 * Math.pow(Math.E,-1 * t) * t;
-//      if (str)
-//          return cal.toFixed(4);
-//      else
-//          return cal;
-//  }
-
-//  function amplitudei1(v1, v2, v3, str, t) {
-//      var cal;
-//      cal = v1 * (Math.pow(Math.E, t * v2) * Math.sin(v3 * t));
-//      if (str)
-//          return cal.toFixed(4);
-//      else
-//          return cal;
-//  }
 
  function amplitudes1(v1, v2, str, t) {
      var cal = v1 - v1 * Math.pow(Math.E, -v2 * t);
@@ -742,40 +559,3 @@ function amplitudesc2(v1, v2, str, t) {
         return cal;
 }
 
-//  function amplituder1(v1, v2, v3, v4, v5, t) {
-//      var cal = -1 * v1 + v2 * t + v1 * Math.pow(Math.E, -1 * v3 * t) * Math.cosh(v4 * t) + v5 * Math.sinh(v4 * t);
-//      return cal;
-//  }
-
-//  function amplituder2(v1, v2, t) {
-//      var cal = -1 * v1 + v2 * t + v1 * Math.pow(Math.E, -1 * t) + v2 * t * Math.pow(Math.E, -1 * t);
-//      return cal;
-//  }
-
-//  function amplitud(a3, b3, b4, c1, c3, c4, t) {
-//      var cal;
-//      if (c1 < 0) {
-//          cal = a3 + b3 * Math.pow(Math.E, c3 * t) * Math.cosh(c4 * t) + b4 * Math.pow(Math.E, c3 * t) * Math.sinh(c4 * t)
-//      } else {
-//          cal = a3 + b3 * Math.pow(Math.E, c3 * t) * Math.cos(c4 * t) + b4 * Math.pow(Math.E, c3 * t) * Math.sin(c4 * t)
-//      }
-//      return cal;
-//  }
-
-//  function calculateControlSignal(setpoint, output) {
-//     var error = setpoint - output;
-//     var proportional = Kp * error;
-//     integral += Ki * erroer * Ts;
-//     var control_signal = proportional + integral;
-
-//     // Limit the control signal to a maximum value
-//     if (control_signal > 1) {
-//         control_signal = 1;
-//     } else if (control_signal < -1) {
-//         control_signal = -1
-//     }
-
-//     prev_error = error;
-
-//     return control_signal;
-//  }
