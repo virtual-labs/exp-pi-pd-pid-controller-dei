@@ -65,13 +65,13 @@ var kpi,essi,esss,kp;
      document.getElementById("chartcont").setAttribute("style", "display:none");
      document.getElementById("tanswer").setAttribute("style", "display:none;");
      document.getElementById("chartcont1").setAttribute("style", "display:none;");
-     for (let i = 1; i < 3; i++) {
+     for (let i = 1; i < 5; i++) {
          let out = "out" + i;
          let ln = "line" + (i + 1);
          document.getElementById(ln).setAttribute("Style", "color:black");
          document.getElementById(out).setAttribute("style", "display:none");
      }
-     document.getElementById("out3").setAttribute("style", "display:none");
+     document.getElementById("out5").setAttribute("style", "display:none");
      if (mto) {
          document.getElementById("fconclusions").innerHTML = "Conclusions will show here";
          document.getElementById("matwork").title = "";
@@ -80,7 +80,9 @@ var kpi,essi,esss,kp;
          document.getElementById("mrun").classList.remove("mrundisabled", "mrunenabled");
          document.getElementById("mrun").classList.add("mrunenabled");
          document.getElementById("matwork").classList.remove('mat');
-         var numerator = "$${\\frac{";
+
+         num0 = "$${G1 = \\frac{";
+         var numerator = "";
          if (a != 0)
              numerator = numerator + a + "s^2";
          if (b != 0)
@@ -102,16 +104,19 @@ var kpi,essi,esss,kp;
                  denominator = denominator + " + " + c2.toFixed();
              else
                  denominator = denominator + c2.toFixed();
-         denominator = denominator + "}}$$";
-         var eqn = numerator + denominator;
-         den2 = denominator;
+         denominator2 = denominator + "}}$$";
+         var eqn = num0+numerator + denominator2;
+         var e1 = numerator+denominator;
+         den2 = denominator2;
+         num2 = numerator;
+         num0 = "$${\\frac{1}{s} * \\frac{G1}{1+G1} = \\frac{";
 
          document.getElementById("out1").innerHTML = eqn;
          
          
          q=B; r=A+C;
          
-         denominator = "{";
+         denominator = "{(";
          if (p != 0)
              denominator = denominator + p + "s^2";
          if (q != 0)
@@ -124,11 +129,28 @@ var kpi,essi,esss,kp;
                  denominator = denominator + " + " + r;
              else
                  denominator = denominator + r;
-         denominator = denominator + " }}$$";
-        eqn = numerator + denominator;
-        document.getElementById("out2").innerHTML = eqn;
+         denominator = denominator + " )*s}}$$";
+        eqn1 = num0+num2 + denominator;
+        document.getElementById("out2").innerHTML = eqn1;
 
-        numerator = "$${\\frac{";
+        var num="";
+        if (ki==0&&kd==0)
+        num = num+k;
+        else if (ki==0&&kd!=0)
+        num = num+kd+"s +"+k;
+        else if (ki!=0&&kd==0)
+        num = num+" \\frac{"+ki+"}{s} + "+k;
+        else
+        num = num+" \\frac{"+ki+"}{s} + "+kd+"s +"+k;
+
+
+        document.getElementById("out3").innerHTML = "$${G2 = "+num+"}$$";
+
+        document.getElementById("out4").innerHTML = "$${G1*G2 = (\\frac{"+e1+"}-) * ("+num+")}$$ ";
+
+
+
+        numerator = "$${\\frac{G1G2}{1+G1G2}- = \\frac{";
         denominator="{";
 
         var n2 = A*kd; var n1 = A*k; var n0 = A*ki;
@@ -178,7 +200,9 @@ denominator = denominator + " }}$$";
   
         eqn = numerator+"}"+denominator;
         
-        document.getElementById("out3").innerHTML = eqn;
+        
+        
+        document.getElementById("out5").innerHTML = eqn;
         
         
          document.getElementById("tanswer").innerHTML ="<br> Step Response in time domain:"+ stepeqn +"<br>Kp:"+kp.toFixed(2)+"<br>ess:"+esss.toFixed(2)+"<br><br>"+ "Response after adding the controller to the system : <br><br>"+coneqn;
@@ -211,6 +235,8 @@ denominator = denominator + " }}$$";
         MathJax.Hub.Queue(["Typeset", MathJax.Hub, "out1"]);
         MathJax.Hub.Queue(["Typeset", MathJax.Hub, "out2"]);
         MathJax.Hub.Queue(["Typeset", MathJax.Hub, "out3"]);
+        MathJax.Hub.Queue(["Typeset", MathJax.Hub, "out4"]);
+        MathJax.Hub.Queue(["Typeset", MathJax.Hub, "out5"]);
         MathJax.Hub.Queue(["Typeset", MathJax.Hub, "tanswer"]);
      } else {
          mto = 1;
@@ -248,12 +274,12 @@ denominator = denominator + " }}$$";
 
  function runprog(i) {
      lc = lc + 1;
-     if (lc <= 3)
+     if (lc <= 5)
          highlightline(lc);
      else {
-        document.getElementById("out3").setAttribute("style", "display:block;");
+        document.getElementById("out5").setAttribute("style", "display:block;");
          document.getElementById("fconclusions").innerHTML = conclusion;
-         document.getElementById("line3").setAttribute("style", "color:black;");
+         document.getElementById("line5").setAttribute("style", "color:black;");
          document.getElementById("mrun").disabled = true;
          var ms = window.matchMedia("screen and (max-width:950px)");
          widthcheck(ms);
