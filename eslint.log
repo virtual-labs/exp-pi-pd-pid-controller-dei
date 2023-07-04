@@ -1,0 +1,173 @@
+
+/home/runner/work/exp-pi-pd-pid-controller-dei/exp-pi-pd-pid-controller-dei/experiment/simulation/js/main.js
+    3:6    warning  'dat_imp' is assigned a value but never used     no-unused-vars
+   12:5    warning  'integral' is assigned a value but never used    no-unused-vars
+   13:5    warning  'prev_error' is assigned a value but never used  no-unused-vars
+   15:5    warning  'eqn' is defined but never used                  no-unused-vars
+   16:5    warning  'poles' is assigned a value but never used       no-unused-vars
+   17:5    warning  'roots' is assigned a value but never used       no-unused-vars
+   18:5    warning  'kpi' is defined but never used                  no-unused-vars
+   18:9    warning  'essi' is defined but never used                 no-unused-vars
+   22:11   warning  'addval' is defined but never used               no-unused-vars
+   28:6    warning  'lab' is not defined                             no-undef
+   29:6    warning  'dat' is not defined                             no-undef
+   30:6    warning  'a' is not defined                               no-undef
+   31:10   warning  'nums' is defined but never used                 no-unused-vars
+   31:16   warning  'dens' is defined but never used                 no-unused-vars
+   41:10   warning  'x1' is defined but never used                   no-unused-vars
+   41:14   warning  'y1' is defined but never used                   no-unused-vars
+   42:10   warning  'ni' is assigned a value but never used          no-unused-vars
+   43:10   warning  'di' is assigned a value but never used          no-unused-vars
+   45:6    warning  'b1' is not defined                              no-undef
+   47:6    warning  'b2' is not defined                              no-undef
+   48:6    warning  'c2' is not defined                              no-undef
+   52:14   warning  'b1' is not defined                              no-undef
+   52:22   warning  'b2' is not defined                              no-undef
+   52:30   warning  'c2' is not defined                              no-undef
+   57:19   warning  'b1' is not defined                              no-undef
+   57:23   warning  'b2' is not defined                              no-undef
+   57:27   warning  'c2' is not defined                              no-undef
+   84:10   warning  'num0' is not defined                            no-undef
+   86:14   warning  'a' is not defined                               no-undef
+   87:38   warning  'a' is not defined                               no-undef
+   89:18   warning  'a' is not defined                               no-undef
+   97:14   warning  'b2' is not defined                              no-undef
+   99:54   warning  'b2' is not defined                              no-undef
+  101:46   warning  'b2' is not defined                              no-undef
+  102:14   warning  'c2' is not defined                              no-undef
+  103:18   warning  'b2' is not defined                              no-undef
+  104:54   warning  'c2' is not defined                              no-undef
+  106:46   warning  'c2' is not defined                              no-undef
+  107:10   warning  'denominator2' is not defined                    no-undef
+  108:20   warning  'num0' is not defined                            no-undef
+  108:37   warning  'denominator2' is not defined                    no-undef
+  110:10   warning  'den2' is not defined                            no-undef
+  110:17   warning  'denominator2' is not defined                    no-undef
+  111:10   warning  'num2' is not defined                            no-undef
+  112:10   warning  'num0' is not defined                            no-undef
+  133:9    warning  'eqn1' is not defined                            no-undef
+  133:16   warning  'num0' is not defined                            no-undef
+  133:21   warning  'num2' is not defined                            no-undef
+  134:53   warning  'eqn1' is not defined                            no-undef
+  209:14   warning  'j' is defined but never used                    no-unused-vars
+  209:17   warning  'k' is already defined                           no-redeclare
+  235:9    warning  'MathJax' is not defined                         no-undef
+  235:39   warning  'MathJax' is not defined                         no-undef
+  236:9    warning  'MathJax' is not defined                         no-undef
+  236:39   warning  'MathJax' is not defined                         no-undef
+  237:9    warning  'MathJax' is not defined                         no-undef
+  237:39   warning  'MathJax' is not defined                         no-undef
+  238:9    warning  'MathJax' is not defined                         no-undef
+  238:39   warning  'MathJax' is not defined                         no-undef
+  239:9    warning  'MathJax' is not defined                         no-undef
+  239:39   warning  'MathJax' is not defined                         no-undef
+  240:9    warning  'MathJax' is not defined                         no-undef
+  240:39   warning  'MathJax' is not defined                         no-undef
+  253:3    warning  Unnecessary semicolon                            no-extra-semi
+  257:11   warning  'showval' is defined but never used              no-unused-vars
+  264:3    warning  Unnecessary semicolon                            no-extra-semi
+  271:3    warning  Unnecessary semicolon                            no-extra-semi
+  275:11   warning  'runprog' is defined but never used              no-unused-vars
+  275:19   warning  'i' is defined but never used                    no-unused-vars
+  291:3    warning  Unnecessary semicolon                            no-extra-semi
+  299:14   warning  'chartplot1' is already defined                  no-redeclare
+  326:23   warning  'Chart' is not defined                           no-undef
+  357:12   warning  'labelimp' is assigned a value but never used    no-unused-vars
+  382:3    warning  Unnecessary semicolon                            no-extra-semi
+  386:11   warning  'dispmenu' is defined but never used             no-unused-vars
+  409:20   warning  'co3' is defined but never used                  no-unused-vars
+  409:25   warning  'co4' is defined but never used                  no-unused-vars
+  457:9    warning  'c1' is defined but never used                   no-unused-vars
+  457:13   warning  'c2' is defined but never used                   no-unused-vars
+  457:17   warning  'c3' is defined but never used                   no-unused-vars
+  457:21   warning  'c4' is defined but never used                   no-unused-vars
+  468:9    warning  'co1' is not defined                             no-undef
+  469:21   warning  'co1' is not defined                             no-undef
+  470:9    warning  'co2' is not defined                             no-undef
+  471:9    warning  'co3' is not defined                             no-undef
+  472:9    warning  'co4' is not defined                             no-undef
+  472:15   warning  'co1' is not defined                             no-undef
+  475:30   warning  'co1' is not defined                             no-undef
+  475:54   warning  'co2' is not defined                             no-undef
+  475:87   warning  'co3' is not defined                             no-undef
+  475:113  warning  'co4' is not defined                             no-undef
+  475:138  warning  'co2' is not defined                             no-undef
+  475:171  warning  'co3' is not defined                             no-undef
+  477:26   warning  'co1' is not defined                             no-undef
+  477:31   warning  'co2' is not defined                             no-undef
+  477:36   warning  'co3' is not defined                             no-undef
+  477:41   warning  'co4' is not defined                             no-undef
+  477:69   warning  'co1' is not defined                             no-undef
+  477:74   warning  'co2' is not defined                             no-undef
+  477:79   warning  'co3' is not defined                             no-undef
+  477:84   warning  'co4' is not defined                             no-undef
+  480:33   warning  'co1' is not defined                             no-undef
+  480:38   warning  'co2' is not defined                             no-undef
+  480:43   warning  'co3' is not defined                             no-undef
+  480:48   warning  'co4' is not defined                             no-undef
+  480:76   warning  'co1' is not defined                             no-undef
+  480:81   warning  'co2' is not defined                             no-undef
+  480:86   warning  'co3' is not defined                             no-undef
+  480:91   warning  'co4' is not defined                             no-undef
+  483:33   warning  'co1' is not defined                             no-undef
+  483:38   warning  'co2' is not defined                             no-undef
+  483:43   warning  'co3' is not defined                             no-undef
+  483:48   warning  'co4' is not defined                             no-undef
+  483:76   warning  'co1' is not defined                             no-undef
+  483:81   warning  'co2' is not defined                             no-undef
+  483:86   warning  'co3' is not defined                             no-undef
+  483:91   warning  'co4' is not defined                             no-undef
+  486:33   warning  'co1' is not defined                             no-undef
+  486:38   warning  'co2' is not defined                             no-undef
+  486:43   warning  'co3' is not defined                             no-undef
+  486:48   warning  'co4' is not defined                             no-undef
+  486:77   warning  'co1' is not defined                             no-undef
+  486:82   warning  'co2' is not defined                             no-undef
+  486:87   warning  'co3' is not defined                             no-undef
+  486:92   warning  'co4' is not defined                             no-undef
+  489:33   warning  'co1' is not defined                             no-undef
+  489:38   warning  'co2' is not defined                             no-undef
+  489:43   warning  'co3' is not defined                             no-undef
+  489:48   warning  'co4' is not defined                             no-undef
+  489:77   warning  'co1' is not defined                             no-undef
+  489:82   warning  'co2' is not defined                             no-undef
+  489:87   warning  'co3' is not defined                             no-undef
+  489:92   warning  'co4' is not defined                             no-undef
+  502:41   warning  'co1' is not defined                             no-undef
+  502:46   warning  'co2' is not defined                             no-undef
+  502:51   warning  'co3' is not defined                             no-undef
+  502:56   warning  'co4' is not defined                             no-undef
+  512:9    warning  'co1' is not defined                             no-undef
+  512:20   warning  'Akd' is not defined                             no-undef
+  513:21   warning  'co1' is not defined                             no-undef
+  514:9    warning  'co2' is not defined                             no-undef
+  514:16   warning  'Ak' is not defined                              no-undef
+  517:30   warning  'co1' is not defined                             no-undef
+  517:59   warning  'co2' is not defined                             no-undef
+  518:26   warning  'co1' is not defined                             no-undef
+  518:31   warning  'co2' is not defined                             no-undef
+  518:59   warning  'co1' is not defined                             no-undef
+  518:64   warning  'co2' is not defined                             no-undef
+  521:33   warning  'co1' is not defined                             no-undef
+  521:38   warning  'co2' is not defined                             no-undef
+  521:66   warning  'co1' is not defined                             no-undef
+  521:71   warning  'co2' is not defined                             no-undef
+  524:33   warning  'co1' is not defined                             no-undef
+  524:38   warning  'co2' is not defined                             no-undef
+  524:66   warning  'co1' is not defined                             no-undef
+  524:71   warning  'co2' is not defined                             no-undef
+  527:33   warning  'co1' is not defined                             no-undef
+  527:38   warning  'co2' is not defined                             no-undef
+  527:67   warning  'co1' is not defined                             no-undef
+  527:72   warning  'co2' is not defined                             no-undef
+  530:33   warning  'co1' is not defined                             no-undef
+  530:38   warning  'co2' is not defined                             no-undef
+  530:67   warning  'co1' is not defined                             no-undef
+  530:72   warning  'co2' is not defined                             no-undef
+  542:40   warning  'co1' is not defined                             no-undef
+  542:45   warning  'co2' is not defined                             no-undef
+  564:11   warning  'amplitudes2' is defined but never used          no-unused-vars
+
+✖ 167 problems (0 errors, 167 warnings)
+  0 errors and 5 warnings potentially fixable with the `--fix` option.
+
