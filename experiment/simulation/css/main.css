@@ -48,7 +48,7 @@ body {
 #enter-val {
     width: 30%;
     float: left;
-    height: 75vh;
+    height: 85vh;
     /* overflow-y: scroll; */
     
 }
@@ -381,7 +381,7 @@ header {
 
 @media screen and (max-height: 680px) {
     #enter-val {
-        height: 79vh;
+        height: 85vh;
     }
     .prog-window {
         height: 70%;
@@ -410,7 +410,7 @@ header {
 
 @media screen and (min-height: 700px) {
     #enter-val {
-        height: 72vh;
+        height: 85vh;
     }
 }
 
@@ -428,7 +428,7 @@ header {
 
 @media screen and (min-height: 1000px) {
     #enter-val {
-        height: 72vh;
+        height: 85vh;
     }
     .prog-window {
         height: 80%;
@@ -437,7 +437,7 @@ header {
 
 @media screen and (min-height: 1300px) {
     #enter-val {
-        height: 75vh;
+        height: 85vh;
     }
     .prog-window {
         height: 91%;
@@ -466,7 +466,7 @@ header {
 @media screen and (min-width: 1000px) {
     @media screen and (min-height: 700px) {
         #enter-val {
-            height: 80vh;
+            height: 85vh;
         }
     }
 }
@@ -474,7 +474,7 @@ header {
 @media screen and (max-width: 600px) {
     @media screen and (max-height: 750px) {
         #enter-val {
-            height: 72vh;
+            height: 85vh;
         }
     }
 }
@@ -482,7 +482,7 @@ header {
 @media screen and (max-width: 750px) {
     @media screen and (max-height: 600px) {
         #enter-val {
-            height: 98vh;
+            height: 85vh;
         }
     }
 }
