@@ -209,13 +209,13 @@ denominator = denominator + " }}$$";
          var j, k;
 
          if (kd==0&&ki==0)
-         conclusion = "The controller is a P controller.";
+         conclusion = "<br>The controller is a P controller.";
          else if (kd!=0&&ki==0)
-         conclusion = "The controller is a PD controller.";
+         conclusion = "<br>The controller is a PD controller.";
          else if (kd==0&&ki!=0)
-         conclusion = "The controller is a PI controller.";
+         conclusion = "<br>The controller is a PI controller.";
          else
-         conclusion = "The controller is a PID controller.";
+         conclusion = "<br>The controller is a PID controller.";
 
          if (k!=0)
          conclusion = conclusion+"<br> The proportional controller tends to amplify the amplitude and thus, shifts the response upwards.";
