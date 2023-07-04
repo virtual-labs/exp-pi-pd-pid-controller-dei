@@ -48,7 +48,7 @@ body {
 #enter-val {
     width: 30%;
     float: left;
-    height: 65vh;
+    height: 75vh;
     
 }
 
@@ -399,7 +399,7 @@ header {
 
 @media screen and (max-height: 450px) {
     #input-statements {
-        height: 105vh;
+        height: auto;
     }
     .matlab-working {
         margin-top: 35vh;
