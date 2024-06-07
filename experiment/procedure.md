@@ -1,5 +1,5 @@
 
-<p style="margin-left:0px;"><strong>Select “Study the effect of PI Controller on system performance”</strong></p>
+<p style="margin-left:0px;"><strong>Select “Study the effect of PI, PD, and PID Controller on system performance”</strong></p>
 <p style="margin-left:0px;"><strong>10. Procedure: </strong></p>
 <p style="margin-left:20px;"><strong>10.1 User Input:</strong></p>
         <p style="margin-left:30px;">10.1.1 Firstly, adjust the values of the coefficient c of the numerator polynomial by 
