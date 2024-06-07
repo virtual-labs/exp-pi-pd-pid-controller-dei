@@ -18,6 +18,6 @@
           10.2.4 Again, click on “Run” button to obtain the transfer function after adding the controller. Also, observe the time domain response of transfer function with and without controller.</p>
 
 <p style="margin-left:20px;"><strong>10.3 Results:</strong></p>
-          <p style="margin-left:30px;">10.3.1  Observe the effect of PI Controller for the input transfer function in the result section and the conclusion of the experiment in the Conclusions Section.</p>
+          <p style="margin-left:30px;">10.3.1  Observe the effect of P, PI, PID Controller for the input transfer function in the result section and the conclusion of the experiment in the Conclusions Section.</p>
 
 
