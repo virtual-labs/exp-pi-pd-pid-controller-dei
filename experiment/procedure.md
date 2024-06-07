@@ -19,5 +19,3 @@
 
 <p style="margin-left:20px;"><strong>10.3 Results:</strong></p>
           <p style="margin-left:30px;">10.3.1  Observe the effect of P, PI, and PID Controller for the input transfer function in the result section and the conclusion of the experiment in the Conclusions Section.</p>
-
-
