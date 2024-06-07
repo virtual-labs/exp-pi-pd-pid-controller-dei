@@ -11,8 +11,8 @@
           10.1.4 Press “Submit” button to submit the values of coefficients of numerator and 
                         denominator polynomial.</p>
 
-<p style="margin-left:20px;"><strong>9.2 Calculations:</strong></p>
-        <p style="margin-left:30px;">9.2.1 Click “Run” button to obtain input transfer function with the given coefficients.<br>
+<p style="margin-left:20px;"><strong>10.2 Calculations:</strong></p>
+        <p style="margin-left:30px;">10.2.1 Click “Run” button to obtain input transfer function with the given coefficients.<br>
           10.2.2 Click on “Run” button again to obtain the closed loop step response of the transfer function.<br>
           10.2.3 Again, click on “Run” button to obtain the transfer function after adding the controller.<br>
           10.2.4 Again, click on “Run” button to obtain the transfer function after adding the controller. Also, observe the time domain response of transfer function with and without controller.</p>
