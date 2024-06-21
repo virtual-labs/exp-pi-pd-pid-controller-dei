@@ -2,37 +2,60 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "If the parameter integral gain increases, then the accuracy ______________ ?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Improves",
+        "b": "No impact",
+        "c": "Decreases",
+        "d": "Deteriorates"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
+
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "The voltage output from the controller usually relating to the actuating signal is known as _________________?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Controller gain",
+        "b": "Controller output",
+        "c": "Both a and b",
+        "d": "None of the  Above"
       },
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The controller output when the error is equal to zero is known as ______________?",
+      "answers": {
+        "a": "Error",
+        "b": "Bias",
+        "c": "Both a and b",
+        "d": "None of the  Above"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+        {
+      "question": "Which of the following is a correct statement ?",
+      "answers": {
+        "a": "PI controllers improves steady state response",
+        "b": "PD controllers improves transient response",
+        "c": "PI controllers improves steady state response and PD controllers improves transient response",
+        "d": "All (a), (b) & (c)"
+      },
+
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What effect does the proportional parameter of control response have on the rise time in a closed-loop control system ?",
+      "answers": {
+        "a": "It decreases",
+        "b": "It eliminates",
+        "c": "No changes",
+        "d": "It increases"
+      },
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]
