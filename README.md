@@ -1,24 +1,9 @@
-## Introduction
 
+### Contributors
 
-<b>Discipline | <b> Electrical Engineering
-:--|:--|
-<b> Lab | <b> Control Engineering Virtual Laboratory (PCC-EE17)
-<b> Experiment|     <b> 9. Study the effect of PI, PD and PID controller on system performance
-
-### About the Experiment 
-
-Fill a brief description of this experiment here
-
-<b>Name of Developer | <b> Dr. Rajeev Kumar Chauhan 
-:--|:--|
-<b> Institute | <b>  Dayalbagh Educational Institute Agra 
-<b> Email id|     <b>  rkchauhan@dei.ac.in 
-<b> Department |  Department of Electrical Engineering 
-
-### Contributors List
-
-SrNo | Name | Faculty or Student | Department| Institute | Email id
-:--|:--|:--|:--|:--|:--|
-1 | Dr. Rajeev Kumar Chauhan | Faculty | Department of Electrical Engineering | Dayalbagh Educational Institute Agra | rkchauhan@dei.ac.in
-2 | . | . | . | . | .
+| Sr No | Name | Faculty or Student | Email ID | Department| Institute | 
+| :--|:--|:--|:--|:--|:--|
+| 1 | Dr. Rajeev Kumar Chauhan | Faculty | rajeevnitj@gmail.com | Department of Electrical Engineering | Dayalbagh Educational Institute (Deemed to be University) Agra | 
+| 2 | Mr. Ansh Mathur | Web Developer | mathuransh02@gmail.com | Department of Electrical Engineering | Dayalbagh Educational Institute (Deemed to be University) Agra | 
+| 3 | Mr. Praveen Kumar | Web Developer | nikkikumar398@gmail.com | Department of Electrical Engineering | Dayalbagh Educational Institute (Deemed to be University) Agra | 
+| 4 | Ms. Mansi Singhal | Web Developer | mansisinghal502@gmail.com | Department of Electrical Engineering | Dayalbagh Educational Institute (Deemed to be University) Agra | 
