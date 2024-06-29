@@ -1,0 +1,61 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Identify the incorrect statement regarding a controller.?",
+      "answers": {
+        "a": "A controller is a comparator that compares the input signal with the reference signal.",
+        "b": "Input given to comparator is error signal.",
+        "c": "PD controller acts as a low pass filter",
+        "d": "None of the above"
+      },
+
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The function of the proportional mode is to ____________?",
+      "answers": {
+        "a": "Provide gain",
+        "b": "Eliminate offsets",
+        "c": "To speed up the response and minimize the overshoot",
+        "d": "All of the above"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The function of the proportional plus derivative mode is to ____________?",
+      "answers": {
+        "a": "Provide gain",
+        "b": "Eliminate offsets",
+        "c": "To speed up the response and minimize the overshoot",
+        "d": "All of the above"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+        {
+      "question": "The function of the proportional plus integral mode is to ____________",
+      "answers": {
+        "a": "Provide gain",
+        "b": "Eliminate offsets",
+        "c": "To speed up the response and minimize the overshoot",
+        "d": "All of the above"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+        {
+      "question": "The controller which is highly sensitive to noise is?",
+      "answers": {
+        "a": "PI",
+        "b": "PD",
+        "c": "Both a and b",
+        "d": "None of the above"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}
